@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DONATION</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/A-BRANDING-LOGO-W.png" type="image/x-icon">
+</head>
+<body>
+    
+    <div class="navbar">
+        <h2 class="navlogo"><a href="index.html"><img src="./img/A-BRANDING-LOGO-W.png" alt="#"></a>
+            <a href="index.html" style="color: white;">Asam</a>
+        </h2>
+
+        <button class="hamburger" onclick="toggleMenu()">
+            ☰
+        </button>
+
+        <div class="nav-links" id="navLinks" style="background-color: black;">
+            <ul class="nav-items" id="navItems">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="#"><i class="fas fa-hand-holding-heart"></i> Donate</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Help Us 
+                <br> Change Lives</h1>
+            <p>
+                Every small donation brings
+                us closer to  feeding <br>
+                families and funding education.
+            </p>
+
+            <button class="btn">Donate Now</button>
+                <!-- <button href="#" class="cta-button">Donate Now</button> -->
+        </div>
+    </section>
+
+    <!-- <section class="donation-sect">
+        <div class="container">
+            <h2 class="headline">Be the Spark That Changes a Life</h2>
+            <p class="tagline" style="color: black;">
+                Every dollar you give is a step towards hope, healing
+                and real-world impact.
+            </p>
+
+            <div class="impact-list" style="color: black;">
+                <p style="color: black;">$10 gives clean water to a child for a month</p>
+                <p style="color: black;">$10 gives clean water to a child for a month</p>
+                <p style="color: black;">$10 gives clean water to a child for a month</p>
+            </div>
+
+            <div class="progress-container">
+                <h4 style="color: black;">We're 63% toward our $10,000 goal</h4>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 63%;"></div>
+                </div>
+                <p><strong>$6,300</strong>raised so far</p>
+            </div>
+
+            <div class="donate-buttons">
+                <button onclick="donate(10)">Donate $10</button>
+                <button onclick="donate(25)">Donate $25</button>
+                <button onclick="donate(50)">Donate $50</button>
+                <button onclick="donateCustom()">Custom Amount</button>
+            </div>
+
+            <blockquote class="testimonial">
+                "Thanks to this community, I got the surgery I needed. I’ll never forget the kindness."
+                <footer>– Ayo, Lagos, Nigeria</footer>
+              </blockquote>
+        </div>
+    </section> -->
+    <div class="abt" id="about">
+        <section class="about-hero">
+            <div class="about-container">
+                <h1>ABOUT US</h1>
+                <p>
+                    We're on a mission to make compassion go viral.
+                    Here's our story.
+                </p>
+            </div>
+        </section>
+
+        <section class="about-story">
+            <div class="about-container">
+                <h2>Our Journey</h2>
+                <p>
+                    What began as a local initiative to support underserved 
+                    communities has now blossomed into a global effort to provide 
+                    clean water, education, and medical care.
+                </p>
+                <p>
+                    We believe that everyone deserves a chance — and with 
+                    your help, we turn small donations into massive impact.
+                </p>
+            </div>
+        </section>
+
+        <section class="impact-stats">
+            <div class="about-container stats-grid">
+
+                <div class="stat-box">
+                    <h3>10,000+</h3>
+                    <p>Lives Impacted</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>$150k+</h3>
+                    <p>Funds Raised</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>32</h3>
+                    <p>Communities Reached</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-cta">
+            <div class="about-container">
+                <h2>Ready to make a Difference?</h2>
+                <p>Your Support fuels our mission. Every action counts.</p>
+                <a href="/donate" class="btn-primary">Donate Now</a>
+            </div>
+        </section>
+    </div>
+
+    <section class="donate-hero">
+        <div class="donate-container">
+            <h1>Support Our Mission</h1>
+            <p>Every donation brings us closer to real impact. Choose
+                an amount below or enter your own.
+            </p>
+
+            <div class="amount-options">
+                <button class="amount-btn amount-btn-active" data-amount="100">$100</button>
+                <button class="amount-btn" data-amount="250">$250</button>
+                <button class="amount-btn" data-amount="500">$500</button>
+            </div>
+
+            <input type="number" class="custom-amount" id="customAmount" placeholder="Or enter custom amount" min="1">
+
+            <button id="donateBtn">Donate Now</button>
+            <button id="cryptoDonateBtn">Donate with Crypto</button>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+    <script src="https://checkout.flutterwave.com/v3.js"></script>
+    <script src="donate.js"></script>
+</body>
+</html>
